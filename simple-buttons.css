@@ -1,0 +1,251 @@
+/*!
+Simple Buttons v1.0
+2019 Zachary Spears
+Licensed under MPL 2.0
+https://www.mozilla.org/en-US/MPL/
+*/
+.simple-button {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.simple-button-reverse {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.simple-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.simple-button-reverse::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/*csslint outline-none:false*/
+.simple-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    color: #414042;
+    border: 2px solid #414042;
+    border-radius: 6px;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    transition: border 300ms ease 0ms,background-color 300ms ease 0ms,background-image 300ms ease 0ms;
+}
+
+/*csslint outline-none:false*/
+.simple-button-reverse {
+    font-family: inherit;
+    font-size: 100%;
+    padding-top: 4px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    color: #fff;
+    border: 2px solid #414042;
+    border-radius: 6px;
+    background-color: #414042;
+    text-decoration: none;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    transition: border 300ms ease 0ms,background-color 300ms ease 0ms,background-image 300ms ease 0ms;
+}
+
+.simple-button-hover,
+.simple-button:hover,
+.simple-button:focus {
+    border: 2px solid #E6E7E8;
+    background-color: #E6E7E8;
+}
+
+.simple-button-reverse-hover,
+.simple-button-reverse:hover,
+.simple-button-reverse:focus {
+    border: 2px solid #414042;
+    background-color: #fff;
+    color: #414042;
+}
+
+.simple-button:focus {
+    border: 2px solid #E6E7E8;
+    background-color: #E6E7E8;
+}
+
+.simple-button-reverse:focus {
+    border: 2px solid #414042;
+    background-color: #fff;
+    color: #414042;
+}
+
+.simple-button-active,
+.simple-button:active {
+    border: 2px solid #414042;
+    background-color: #E6E7E8;
+}
+
+.simple-button-reverse-active,
+.simple-button-reverse:active {
+    border: 2px solid #414042;
+    background-color: #E6E7E8;
+    color: #414042;
+}
+
+.simple-button[disabled],
+.simple-button-disabled,
+.simple-button-disabled:hover,
+.simple-button-disabled:focus,
+.simple-button-disabled:active {
+    border: 2px solid #414042;
+    background-image: none;
+    /* csslint ignore:start */
+    filter: alpha(opacity=40);
+    /* csslint ignore:end */
+    opacity: 0.40;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.simple-button-reverse[disabled],
+.simple-button-disabled-reverse,
+.simple-button-disabled-reverse:hover,
+.simple-button-disabled-reverse:focus,
+.simple-button-disabled-reverse:active {
+    border: 2px solid #414042;
+    background-image: none;
+    /* csslint ignore:start */
+    filter: alpha(opacity=40);
+    /* csslint ignore:end */
+    opacity: 0.40;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.simple-button-hidden {
+    display: none;
+}
+
+.simple-button-reverse-hidden {
+    display: none;
+}
+
+.simple-button-primary,
+.simple-button-selected,
+a.simple-button-primary,
+a.simple-button-selected {
+    border: 2px solid #437F97;
+    color: #437F97;
+}
+
+.simple-button-reverse-primary,
+.simple-button-reverse-selected,
+a.simple-button-reverse-primary,
+a.simple-button-reverse-selected {
+    border: 2px solid #437F97;
+    background-color: #437F97;
+    color: #fff;
+}
+
+.simple-button-primary-active,
+.simple-button-primary:active {
+    border: 2px solid #437F97;
+    background-color: #E6E7E8;
+}
+
+.simple-button-reverse-primary-hover,
+.simple-button-reverse-primary:hover,
+.simple-button-reverse-primary:focus {
+    border: 2px solid #437F97;
+    background-color: #fff;
+    color: #437F97;
+}
+
+.simple-button-reverse-primary-active,
+.simple-button-reverse-primary:active {
+    background-color: #E6E7E8;
+}
+
+.simple-button-warning,
+.simple-button-selected,
+a.simple-button-warning,
+a.simple-button-selected {
+    border: 2px solid #F03A47;
+    color: #F03A47;
+}
+
+.simple-button-reverse-warning,
+.simple-button-reverse-selected,
+a.simple-button-reverse-warning,
+a.simple-button-reverse-selected {
+    border: 2px solid #F03A47;
+    background-color: #F03A47;
+    color: #fff;
+}
+
+
+.simple-button-warning-active,
+.simple-button-warning:active {
+    border: 2px solid #F03A47;
+    background-color: #E6E7E8;
+}
+
+.simple-button-reverse-warning-hover,
+.simple-button-reverse-warning:hover,
+.simple-button-reverse-warning:focus {
+    border: 2px solid #F03A47;
+    background-color: #fff;
+    color: #F03A47;
+}
+
+.simple-button-reverse-warning-active,
+.simple-button-reverse-warning:active {
+    background-color: #E6E7E8;
+}
+
+.simple-button-small,
+.simple-button-selected,
+a.simple-button-small,
+a.simple-button-selected {
+    font-size: 75%;
+}
+
+.simple-button-large,
+.simple-button-selected,
+a.simple-button-large,
+a.simple-button-selected {
+    font-size: 125%;
+}
